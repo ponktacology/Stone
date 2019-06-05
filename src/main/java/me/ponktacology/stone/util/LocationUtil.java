@@ -1,4 +1,4 @@
-package com.jelizy.stone.util;
+package me.ponktacology.stone.util;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;

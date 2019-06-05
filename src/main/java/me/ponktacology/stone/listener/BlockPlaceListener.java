@@ -1,8 +1,8 @@
-package com.jelizy.stone.listener;
+package me.ponktacology.stone.listener;
 
 
-import com.jelizy.stone.generator.Generator;
-import com.jelizy.stone.util.CC;
+import me.ponktacology.stone.generator.Generator;
+import me.ponktacology.stone.util.CC;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

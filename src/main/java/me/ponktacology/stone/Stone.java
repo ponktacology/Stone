@@ -1,11 +1,11 @@
-package com.jelizy.stone;
+package me.ponktacology.stone;
 
-import com.jelizy.stone.config.StoneConfig;
-import com.jelizy.stone.data.StoneData;
-import com.jelizy.stone.listener.BlockBreakListener;
-import com.jelizy.stone.listener.BlockPlaceListener;
-import com.jelizy.stone.util.CC;
-import com.jelizy.stone.util.ItemBuilder;
+import me.ponktacology.stone.config.StoneConfig;
+import me.ponktacology.stone.data.StoneData;
+import me.ponktacology.stone.listener.BlockBreakListener;
+import me.ponktacology.stone.listener.BlockPlaceListener;
+import me.ponktacology.stone.util.CC;
+import me.ponktacology.stone.util.ItemBuilder;
 import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.enchantments.Enchantment;

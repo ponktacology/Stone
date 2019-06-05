@@ -1,6 +1,6 @@
-package com.jelizy.stone.config;
+package me.ponktacology.stone.config;
 
-import com.jelizy.stone.Stone;
+import me.ponktacology.stone.Stone;
 import lombok.Getter;
 import org.bukkit.Material;
 

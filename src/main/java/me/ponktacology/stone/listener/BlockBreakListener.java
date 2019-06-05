@@ -1,10 +1,10 @@
-package com.jelizy.stone.listener;
+package me.ponktacology.stone.listener;
 
-import com.jelizy.stone.Stone;
-import com.jelizy.stone.generator.Generator;
-import com.jelizy.stone.manager.StoneManager;
-import com.jelizy.stone.util.CC;
-import com.jelizy.stone.util.ItemBuilder;
+import me.ponktacology.stone.Stone;
+import me.ponktacology.stone.generator.Generator;
+import me.ponktacology.stone.manager.StoneManager;
+import me.ponktacology.stone.util.CC;
+import me.ponktacology.stone.util.ItemBuilder;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.enchantments.Enchantment;

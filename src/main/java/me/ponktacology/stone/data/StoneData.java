@@ -1,9 +1,9 @@
-package com.jelizy.stone.data;
+package me.ponktacology.stone.data;
 
-import com.jelizy.stone.Stone;
-import com.jelizy.stone.generator.Generator;
-import com.jelizy.stone.manager.StoneManager;
-import com.jelizy.stone.util.LocationUtil;
+import me.ponktacology.stone.Stone;
+import me.ponktacology.stone.generator.Generator;
+import me.ponktacology.stone.manager.StoneManager;
+import me.ponktacology.stone.util.LocationUtil;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;

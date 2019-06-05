@@ -1,7 +1,7 @@
-package com.jelizy.stone.generator;
+package me.ponktacology.stone.generator;
 
-import com.jelizy.stone.Stone;
-import com.jelizy.stone.manager.StoneManager;
+import me.ponktacology.stone.Stone;
+import me.ponktacology.stone.manager.StoneManager;
 import lombok.Data;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
