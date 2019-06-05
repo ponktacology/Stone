@@ -4,7 +4,7 @@ import me.ponktacology.stone.config.StoneConfig;
 import me.ponktacology.stone.data.StoneData;
 import me.ponktacology.stone.listener.BlockBreakListener;
 import me.ponktacology.stone.listener.BlockPlaceListener;
-import me.ponktacology.stone.util.CC;
+import me.ponktacology.stone.util.Color;
 import me.ponktacology.stone.util.ItemBuilder;
 import lombok.Getter;
 import org.bukkit.Bukkit;
@@ -32,22 +32,17 @@ public final class Stone extends JavaPlugin {
 
     Bukkit.getScheduler().runTaskAsynchronously(this, StoneData::loadAll);
 
-    ItemStack stoniarka = new ItemBuilder(this.stoneConfig.getMaterial()).setName(
-        CC.translate("&e&lStoniarka")).addEnchant(Enchantment.DURABILITY, 10)
-        .addLoreLine(CC.translate("&cUzycia: &f" + this.stoneConfig.getDurability())).addItemFlags(
+    ItemStack generator = new ItemBuilder(this.stoneConfig.getMaterial()).setName(
+        Color.translate("&e&lStoniarka")).addEnchant(Enchantment.DURABILITY, 10)
+        .addLoreLine(Color.translate("&cUzycia: &f" + this.stoneConfig.getDurability()))
+        .addItemFlags(
             ItemFlag.HIDE_ENCHANTS).toItemStack();
 
-    ShapedRecipe recipe = new ShapedRecipe(stoniarka);
+    ShapedRecipe recipe = new ShapedRecipe(generator);
     recipe.shape("123", "456", "789");
-    recipe.setIngredient('1', this.stoneConfig.getSlot1());
-    recipe.setIngredient('2', this.stoneConfig.getSlot2());
-    recipe.setIngredient('3', this.stoneConfig.getSlot3());
-    recipe.setIngredient('4', this.stoneConfig.getSlot4());
-    recipe.setIngredient('5', this.stoneConfig.getSlot5());
-    recipe.setIngredient('6', this.stoneConfig.getSlot6());
-    recipe.setIngredient('7', this.stoneConfig.getSlot7());
-    recipe.setIngredient('8', this.stoneConfig.getSlot8());
-    recipe.setIngredient('9', this.stoneConfig.getSlot9());
+    for (int x = 1; x <= 9; x++) {
+      recipe.setIngredient(Character.toChars('0' + x)[0], this.stoneConfig.getCrafting().get(x - 1));
+    }
     Bukkit.addRecipe(recipe);
 
     Bukkit.getPluginManager().registerEvents(new BlockBreakListener(), this);

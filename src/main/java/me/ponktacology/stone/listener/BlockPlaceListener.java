@@ -2,7 +2,7 @@ package me.ponktacology.stone.listener;
 
 
 import me.ponktacology.stone.generator.Generator;
-import me.ponktacology.stone.util.CC;
+import me.ponktacology.stone.util.Color;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -20,13 +20,13 @@ public class BlockPlaceListener implements Listener {
     }
 
     if (event.getItemInHand().getItemMeta().getDisplayName()
-        .equals(CC.translate("&e&lStoniarka"))) {
+        .equals(Color.translate("&e&lStoniarka"))) {
       int durability = Integer.valueOf(event.getItemInHand().getItemMeta().getLore().get(0)
-          .replace(CC.translate("&cUzycia: &f"), ""));
+          .replace(Color.translate("&cUzycia: &f"), ""));
       new Generator(event.getBlockPlaced().getLocation(), durability);
       event.getBlockPlaced().setType(Material.STONE);
       player.sendMessage(
-          CC.translate("&eStworzyles stoniarke! Zeby ja zniszczyc musisz uzyc zlotego kilofa."));
+          Color.translate("&eStworzyles stoniarke! Zeby ja zniszczyc musisz uzyc zlotego kilofa."));
     }
   }
 }

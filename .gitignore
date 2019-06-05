@@ -1,3 +1,18 @@
 
 .idea/workspace.xml
 .idea/vcs.xml
+target/classes/config.yml
+target/classes/me/ponktacology/stone/config/StoneConfig.class
+target/classes/me/ponktacology/stone/data/StoneData.class
+target/classes/me/ponktacology/stone/generator/Generator.class
+target/classes/me/ponktacology/stone/listener/BlockBreakListener.class
+target/classes/me/ponktacology/stone/listener/BlockPlaceListener.class
+target/classes/me/ponktacology/stone/manager/StoneManager.class
+target/classes/me/ponktacology/stone/Stone.class
+target/classes/me/ponktacology/stone/util/Color.class
+target/classes/me/ponktacology/stone/util/ItemBuilder.class
+target/classes/me/ponktacology/stone/util/LocationUtil.class
+target/classes/META-INF/Stone.kotlin_module
+target/classes/plugin.yml
+.idea/workspace.xml
+*.xml

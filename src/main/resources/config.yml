@@ -1,13 +1,14 @@
-mongo_link: "mongodb+srv://blabla"
+mongo_link: "mongodb+srv://yourlink"
 durability: 5000
 regen_time: 2
 material: EMERALD_ORE
-slot1: STONE
-slot2: STONE
-slot3: STONE
-slot4: STONE
-slot5: PISTON_BASE
-slot6: STONE
-slot7: STONE
-slot8: STONE
-slot9: STONE
+crafting:
+  - STONE
+  - STONE
+  - STONE
+  - STONE
+  - IRON_INGOT
+  - STONE
+  - STONE
+  - STONE
+  - STONE

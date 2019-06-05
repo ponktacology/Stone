@@ -3,7 +3,7 @@ package me.ponktacology.stone.listener;
 import me.ponktacology.stone.Stone;
 import me.ponktacology.stone.generator.Generator;
 import me.ponktacology.stone.manager.StoneManager;
-import me.ponktacology.stone.util.CC;
+import me.ponktacology.stone.util.Color;
 import me.ponktacology.stone.util.ItemBuilder;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -38,13 +38,13 @@ public class BlockBreakListener implements Listener {
 
     if (player.getItemInHand().getType().equals(Material.GOLD_PICKAXE)) {
       stone.setType(Material.AIR);
-      ItemStack stoniarka = new ItemBuilder(Stone.getInstance().getStoneConfig().getMaterial()).setName(
-          CC.translate("&e&lStoniarka")).addEnchant(Enchantment.DURABILITY, 10)
-          .addLoreLine(CC.translate("&cUzycia: &f" + generator.getDurability())).addItemFlags(
+      ItemStack generatorItem = new ItemBuilder(Stone.getInstance().getStoneConfig().getMaterial()).setName(
+          Color.translate("&e&lStoniarka")).addEnchant(Enchantment.DURABILITY, 10)
+          .addLoreLine(Color.translate("&cUzycia: &f" + generator.getDurability())).addItemFlags(
               ItemFlag.HIDE_ENCHANTS).toItemStack();
 
-      stone.getLocation().getWorld().dropItemNaturally(stone.getLocation(), stoniarka);
-      player.sendMessage(CC.translate("&eZniszczyles stoniarke!"));
+      stone.getLocation().getWorld().dropItemNaturally(stone.getLocation(), generatorItem);
+      player.sendMessage(Color.translate("&eZniszczyles stoniarke!"));
       StoneManager.getGenerators().remove(generator.getBlockLocation());
     } else {
       generator.setDurability(generator.getDurability() - 1);
