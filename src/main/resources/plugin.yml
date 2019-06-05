@@ -1,0 +1,6 @@
+name: Stone
+version: ${project.version}
+main: com.jelizy.stone.Stone
+authors: [ponktacology]
+description: Drop plugin
+website: www.jelizy.com

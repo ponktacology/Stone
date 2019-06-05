@@ -1,0 +1,13 @@
+mongo_link: "mongodb+srv://core:sUBa1lqCKWbPl0mM@cluster0-zch1g.mongodb.net/test?retryWrites=true"
+durability: 5000
+regen_time: 2
+material: EMERALD_ORE
+slot1: STONE
+slot2: STONE
+slot3: STONE
+slot4: STONE
+slot5: PISTON_BASE
+slot6: STONE
+slot7: STONE
+slot8: STONE
+slot9: STONE

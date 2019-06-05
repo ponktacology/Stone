@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Stone:jar">
+    <output-path>$PROJECT_DIR$/../../../../test enviroement/test server/plugins</output-path>
+    <root id="archive" name="Stone.jar">
+      <element id="module-output" name="Stone" />
+    </root>
+  </artifact>
+</component>
